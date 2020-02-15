@@ -1,0 +1,85 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Spotify Web API - Display User Data</title>
+      <meta name="robots" content="noindex, nofollow">
+      <meta name="googlebot" content="noindex, nofollow">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <script type="text/javascript" src="/js/index.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+      <script type="text/javascript" src="../js/calls.js"></script>
+   </head>
+   <body>
+     
+           <div id="infobar">
+               <span>Ακούς σε:</span>
+               <span id="topinfo">-</span>
+           </div>
+         <div class="topbar">
+             <div id="profile">
+                  <div id="profilephoto">
+                     <img id='photo' src="/images/profile.png"  height="120" width="120">
+                  </div>
+                  <div class="profingo">
+                  <div id="name" style="margin-bottom: 10px;"></div>
+                  <div id="email" style="display:none;"></div>
+                  <div id="track_id"></div>
+                  </div>
+               </div>
+         </div>
+        
+      <div class="wrap flex">
+      
+          
+                <div class="playercont">
+                 <div id="songphoto">
+                  <img id='sngphoto' src="/images/default-album-art.png" >
+                   <div class="overlay">
+                    <div class="text"><i class="fas fa-pause"></i></div>
+                </div>
+               </div>
+               <div id="playing">
+                  <div id="songname"></div>
+                  <div id="album"></div>
+                  <div id="artist"></div>
+               </div>
+               </div>
+               <div class="lyricscont">
+                  <div id="lyrics"></div>
+                   
+                   
+                 <div class="btncontaner" >
+                   <button id="getlyrics">Get Lyrics
+                
+                </button>
+               
+                </div> 
+                 <div class="loadercont" id="loadercont">
+                <div class="loader">
+                    <span class="loader__dot"></span>
+                    <span class="loader__dot"></span>
+                    <span class="loader__dot"></span>
+</div>
+</div>
+           
+               
+                
+            </div>
+         
+       
+      </div>
+        <div class="footer">
+            <button class="buttons" id="showlyrics"><i class="fas fa-music"></i></button> 
+            <div class="overlay2" id="ispremium">You must have Spotify premium to use navigation</div>
+            <button class="buttons" id="previous_song"></button> 
+            <button class="buttons pause" id="toggle"></button> 
+            <button class="buttons" id="next_song"></button> 
+         </div>
+   </body>
